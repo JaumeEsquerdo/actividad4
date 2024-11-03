@@ -111,8 +111,8 @@
         article {
             background-color: #fff;
 
-            padding: 20px;
-            max-width: 1000px;
+            padding: 30px;
+            max-width: 1300px;
             margin: 20px auto;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
             border-radius: 10px;
@@ -179,7 +179,7 @@
 
         figure {
             text-align: center;
-            margin-top: 20px;
+            margin-top: 40px;
 
         }
 
@@ -205,7 +205,72 @@
             margin-right: 200px;
             display: flex;
             flex-direction: column;
+            background-color: #b8b5b5;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
         }
+
+        .tarjeta {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px;
+            border: 1px solid black;
+            min-width: 350px;
+            max-width: 350px;
+            border-radius: 10px;
+            margin: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .tarjeta:hover {
+            transform: scale(1.05);
+        }
+
+
+        .tarjeta img {
+            max-width: 250px;
+            border-radius: 8px;
+
+
+        }
+
+        .tarjeta a {
+            text-decoration: none;
+
+        }
+
+        aside h2 {
+            display: flex;
+            color: #333;
+            justify-content: center;
+        }
+
+        section h3 {
+            display: flex;
+            justify-content: center;
+        }
+
+        aside section ul {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style: none;
+        }
+
+        section p {
+            display: flex;
+            justify-content: center;
+        }
+
+        /* #otras-recetas{
+            color: black;
+        } */
     </style>
 
 </head>
@@ -292,6 +357,7 @@
 
         <aside>
             <h2>Información adicional</h2>
+            <hr>
             <section>
                 <h3>Tiempo de preparación</h3>
                 <p>10 minutos</p>
@@ -313,35 +379,39 @@
             </section>
 
             <section>
-                <h3>Otras recetas</h3>
-                <nav>
-                    <ul>
-                        <li>
-                            <div class="tarjeta">
-                                <h3>Pizza carbonara</h3>
-                                <p>Una pizza con crema de nata</p>
-                                <a href="#">Ver receta</a>
-                            </div>
-                        </li>
+                <h2 id="otras-recetas">Otras recetas:</h3>
+                    <hr>
+                    <nav>
+                        <ul>
+                            <li>
+                                <div class="tarjeta">
+                                    <h3>Pizza carbonara</h3>
+                                    <img src="/img/pizza.jpg" alt="pizza carbonara">
+                                    <p>Una pizza con crema de nata</p>
+                                    <a href="#">Ver receta</a>
+                                </div>
+                            </li>
 
-                        <li>
-                            <div class="tarjeta">
-                                <h3>Macarrones</h3>
-                                <p>Al estilo de toda la vida</p>
-                                <a href="#">Ver receta</a>
-                            </div>
-                        </li>
+                            <li>
+                                <div class="tarjeta">
+                                    <h3>Macarrones</h3>
+                                    <img src="/img/macarrones.jpg" alt="macarrones">
+                                    <p>Al estilo de toda la vida</p>
+                                    <a href="#">Ver receta</a>
+                                </div>
+                            </li>
 
-                        <li>
-                            <div class="tarjeta">
-                                <h3>Empanadas</h3>
-                                <p>Crujientes por fuera y tiernas por dentro</p>
-                                <a href="#">Ver receta</a>
-                            </div>
-                        </li>
+                            <li>
+                                <div class="tarjeta">
+                                    <h3>Empanadas</h3>
+                                    <img src="/img/empanadas.webp" alt="empanadas">
+                                    <p>Crujientes por fuera y tiernas por dentro</p>
+                                    <a href="#">Ver receta</a>
+                                </div>
+                            </li>
 
-                    </ul>
-                </nav>
+                        </ul>
+                    </nav>
             </section>
         </aside>
     </main>
