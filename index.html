@@ -14,6 +14,7 @@
             box-sizing: border-box;
             padding: 0;
             margin: 0;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
 
         }
 
@@ -102,7 +103,7 @@
         /* AQUÍ VA EL CONTENIDO PRINCIPAL */
         main {
             display: flex;
-            justify-content: space-between;
+
             margin: 20px;
 
         }
@@ -197,6 +198,14 @@
             color: #666;
             margin-top: 8px;
         }
+
+        /* ASIDE */
+
+        aside {
+            margin-right: 200px;
+            display: flex;
+            flex-direction: column;
+        }
     </style>
 
 </head>
@@ -284,8 +293,8 @@
         <aside>
             <h2>Información adicional</h2>
             <section>
-               <h3>Tiempo de preparación</h3>
-               <p>10 minutos</p>
+                <h3>Tiempo de preparación</h3>
+                <p>10 minutos</p>
             </section>
 
             <section>
@@ -307,9 +316,30 @@
                 <h3>Otras recetas</h3>
                 <nav>
                     <ul>
-                        <li><a href=""></a></li>
-                        <li><a href=""></a></li>
-                        <li><a href=""></a></li>
+                        <li>
+                            <div class="tarjeta">
+                                <h3>Pizza carbonara</h3>
+                                <p>Una pizza con crema de nata</p>
+                                <a href="#">Ver receta</a>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="tarjeta">
+                                <h3>Macarrones</h3>
+                                <p>Al estilo de toda la vida</p>
+                                <a href="#">Ver receta</a>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="tarjeta">
+                                <h3>Empanadas</h3>
+                                <p>Crujientes por fuera y tiernas por dentro</p>
+                                <a href="#">Ver receta</a>
+                            </div>
+                        </li>
+
                     </ul>
                 </nav>
             </section>
