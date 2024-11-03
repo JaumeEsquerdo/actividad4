@@ -17,16 +17,16 @@
 
         }
 
-        /* aqui van los estilos del header */
+        /* AQUÍ VAN LOS ESTILOS DEL HEADER */
 
-        header {
+        .header-nav {
             display: flex;
             justify-content: space-between;
             background-color: #afca61;
 
         }
 
-        header ul {
+        .header-nav nav ul {
             display: flex;
             gap: 50px;
             padding: 10px;
@@ -34,13 +34,14 @@
             list-style: none;
         }
 
-        header ul a {
+        .header-nav nav a {
             text-decoration: none;
             font-size: 20px;
             margin: 20px;
             font-weight: bold;
             color: rgb(64, 63, 63)
         }
+
         .logo {
             border: 2px solid black;
             border-radius: 50px 50px 50px 50px;
@@ -58,121 +59,306 @@
         /* AQUÍ VA EL FOOTER */
 
         footer {
-    background-color: #afca61;
-    padding: 20px;
-    text-align: center;
-    color: #333;
-}
+            background-color: #afca61;
+            padding: 20px;
+            text-align: center;
+            color: #333;
+        }
 
-    
 
-.footer-nav {
-    list-style: none;
-    padding: 0;
-    margin: 10px 0;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
 
-.footer-nav li {
-    display: inline;
-}
-
-.footer-nav a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-}
-
-.footer-social, .footer-contact, .footer-legal, .footer-newsletter, .footer-copyright {
-    margin: 10px 0;
-}
-
-.footer-social a {
-    text-decoration: none;
-    color: #333;
-}
-
-        .container {
+        .footer-nav {
+            list-style: none;
+            padding: 0;
+            margin: 10px 0;
             display: flex;
-            flex-direction: column;
-            height: 100vh;
-        }
-        main{
-            height: 100vh;;
+            justify-content: center;
+            gap: 20px;
         }
 
+        .footer-nav nav li {
+            display: inline;
+        }
+
+        .footer-nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .footer-social,
+        .footer-contact,
+        .footer-legal,
+        .footer-newsletter,
+        .footer-copyright {
+            margin: 10px 0;
+        }
+
+        .footer-social nav a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        /* AQUÍ VA EL CONTENIDO PRINCIPAL */
+        main {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px;
+
+        }
+
+        article {
+            background-color: #fff;
+
+            padding: 20px;
+            max-width: 1000px;
+            margin: 20px auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+            border-radius: 10px;
+
+        }
+
+        aside {
+            margin: 20px;
+        }
+
+        main header h1 {
+            font-size: 2.9em;
+            color: #afca61;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+
+        main header p {
+            font-style: italic;
+            color: #666;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        section {
+            margin: 20px 0;
+        }
+
+        section h2 {
+            font-size: 1.7em;
+            color: #afca61;
+            line-height: 1.6;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+            margin-top: 10px;
+        }
+
+        ul li {
+            margin-bottom: 5px;
+            font-size: 1.2em;
+        }
+
+        ol {
+            list-style-type: decimal;
+            padding-left: 20px;
+            margin-top: 10px;
+
+        }
+
+        ol li {
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+
+        /* IMAGEN */
+
+        figure {
+            text-align: center;
+            margin-top: 20px;
+
+        }
+
+        figure img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            object-fit: cover;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+
+
+        }
+
+        figure figcaption {
+            font-size: 1em;
+            color: #666;
+            margin-top: 8px;
+        }
     </style>
 
 </head>
 
 <body>
-    <div class="container">
 
-    <header>
+
+    <header class="header-nav">
         <div class="logo">
             <a href="./index.html">
                 <img src="../img/logo.png" alt="Logo de pagina" /></a>
         </div>
-        <ul>
-            <li><a href="./usuarios.html">Usuarios</a></li>
-            <li><a id="resenas-seccion" href="./resenas.html">Reseñas</a></li>
-            <li><a href="./recetas.html">Recetas</a></li>
-            <li><a href="./perfil.html">Perfil</a></li>
+        <nav>
+            <ul>
+                <li><a href="./usuarios.html">Usuarios</a></li>
+                <li><a id="resenas-seccion" href="./resenas.html">Reseñas</a></li>
+                <li><a href="./recetas.html">Recetas</a></li>
+                <li><a href="./perfil.html">Perfil</a></li>
 
-            <li><a href="./index.html">Inicio</a></li>
-        </ul>
+                <li><a href="./index.html">Inicio</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
         <article>
-            
+            <header>
+                <h1>Tortilla de patata</h1>
+                <p>Autor: <strong>Antonio</strong></p>
+            </header>
+            <section>
+                <h2>Descripción</h2>
+                <p>La tortilla de patata es un clásico de la cocina española. Es un plato sencillo, delicioso y perfecto
+                    para compartir en cualquier ocasión. Esta receta tradicional te guiará para hacer una tortilla
+                    jugosa y sabrosa.</p>
+            </section>
+            <section>
+                <h2>Ingredientes</h2>
+                <ul>
+                    <li>
+                        5 patatas medianas
+                    </li>
+                    <li>
+                        <i>1 cebolla (opcional)</i>
+                    </li>
+                    <li>
+                        5 huevos
+                    </li>
+                    <li>
+                        Aceite de oliva virgen extra
+                    </li>
+                    <li>
+                        Sal al gusto
+                    </li>
+                </ul>
+
+            </section>
+
+            <section>
+                <h2>Instrucciones</h2>
+
+                <ol>
+                    <li>Pelar y cortar las patatas en rodajas finas.</li>
+                    <li>Calentar abundante aceite de oliva en una sartén y añadir las patatas (y la cebolla, si se usa).
+                    </li>
+                    <li>Freír a fuego medio hasta que las patatas estén tiernas, removiendo de vez en cuando para que no
+                        se doren demasiado.</li>
+                    <li>Escurrir el exceso de aceite y colocar las patatas en un bol grande.</li>
+                    <li>Batir los huevos con una pizca de sal y mezclarlos con las patatas.</li>
+                    <li>En la misma sartén con un poco de aceite, verter la mezcla de patatas y huevo.</li>
+                    <li>Cocinar a fuego lento hasta que la tortilla esté cuajada por debajo, luego darle la vuelta con
+                        ayuda de un plato y cocinar el otro lado hasta dorar.</li>
+                </ol>
+
+            </section>
+
+            <figure>
+                <img src="/img/fotografia-de-una-tortilla-de-patata.webp" alt="Tortilla de patata">
+                <figcaption>Tortilla de patata española</figcaption>
+            </figure>
+
+
+
         </article>
+
+        <aside>
+            <h2>Información adicional</h2>
+            <section>
+               <h3>Tiempo de preparación</h3>
+               <p>10 minutos</p>
+            </section>
+
+            <section>
+                <h3>Tiempo de cocción</h3>
+                <p>20 minutos</p>
+            </section>
+
+            <section>
+                <h3>Valor nutricional (por porción)</h3>
+                <ul>
+                    <li>Calorías: 250 kcal</li>
+                    <li>Proteínas: 7g</li>
+                    <li>Grasas: 15g</li>
+                    <li>Carbohidratos: 20g</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>Otras recetas</h3>
+                <nav>
+                    <ul>
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                    </ul>
+                </nav>
+            </section>
+        </aside>
     </main>
 
     <footer>
-        
-            <!-- Enlaces de navegación -->
-            <ul class="footer-nav">
-                <li><a href="./index.html">Inicio</a></li>
-                <li><a href="./recetas.html">Recetas</a></li>
-                <li><a href="./intercambios.html">Intercambios</a></li>
-                <li><a href="./desafios.html">Desafíos</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-                <li><a href="./acerca.html">Acerca de nosotros</a></li>
-            </ul>
 
-            <!-- Redes sociales -->
-            <div class="footer-social">
-                <p>Síguenos en:</p>
-                <a href="https://www.facebook.com/ChefConnect" target="_blank">Facebook</a>
-                |
-                <a href="https://www.instagram.com/ChefConnect" target="_blank">Instagram</a>
-                |
-                <a href="https://twitter.com/ChefConnect" target="_blank">Twitter</a>
-            </div>
+        <!-- Enlaces de navegación -->
+        <ul class="footer-nav">
+            <li><a href="./index.html">Inicio</a></li>
+            <li><a href="./recetas.html">Recetas</a></li>
+            <li><a href="./intercambios.html">Intercambios</a></li>
+            <li><a href="./desafios.html">Desafíos</a></li>
+            <li><a href="./contacto.html">Contacto</a></li>
+            <li><a href="./acerca.html">Acerca de nosotros</a></li>
+        </ul>
 
-            <!-- Información de contacto -->
-            <div class="footer-contact">
-                <p>
-                    Contacto:
-                    <a href="mailto:soporte@chefconnect.com">soporte@chefconnect.com</a>
-                </p>
-            </div>
+        <!-- Redes sociales -->
+        <div class="footer-social">
+            <p>Síguenos en:</p>
+            <a href="https://www.facebook.com/ChefConnect" target="_blank">Facebook</a>
+            |
+            <a href="https://www.instagram.com/ChefConnect" target="_blank">Instagram</a>
+            |
+            <a href="https://twitter.com/ChefConnect" target="_blank">Twitter</a>
+        </div>
 
-            <!-- Políticas del sitio -->
-            <div class="footer-legal">
-                <a href="./privacidad.html">Política de Privacidad</a> |
-                <a href="./tyc.html">Términos y Condiciones</a>
-            </div>
+        <!-- Información de contacto -->
+        <div class="footer-contact">
+            <p>
+                Contacto:
+                <a href="mailto:soporte@chefconnect.com">soporte@chefconnect.com</a>
+            </p>
+        </div>
 
-            <!-- Derechos de autor -->
-            <div class="footer-copyright">
-                <p>&copy; 2024 ChefConnect. Todos los derechos reservados.</p>
-            </div>
-       
+        <!-- Políticas del sitio -->
+        <div class="footer-legal">
+            <a href="./privacidad.html">Política de Privacidad</a> |
+            <a href="./tyc.html">Términos y Condiciones</a>
+        </div>
+
+        <!-- Derechos de autor -->
+        <div class="footer-copyright">
+            <p>&copy; 2024 ChefConnect. Todos los derechos reservados.</p>
+        </div>
+
     </footer>
-</div>
+
 </body>
 
 </html>
