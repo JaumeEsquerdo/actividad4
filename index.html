@@ -241,16 +241,22 @@
             text-decoration: none;
 
         }
+        .tarjeta p{
+            font-size: medium;
+            padding: 5px;
+            text-align: center;
+        }
 
         aside h2 {
             display: flex;
-            color: #333;
+            color: #181717;
             justify-content: center;
         }
 
         section h3 {
             display: flex;
             justify-content: center;
+            color: #333;
         }
 
         aside section ul {
@@ -268,9 +274,28 @@
             justify-content: center;
         }
 
-        /* #otras-recetas{
+        span .boton {
+            width: 20px;
+        }
+
+        button {
+            padding: 5px 10px;
+            border-radius: 8px;
+            background-color: #e7ba2f;
+
+            border: 2px solid black;
+            /* Borde negro */
+            box-shadow: inset 10px 10px 10px #d49839;
+            border-radius: 255px 15px 225px 15px / 15px 225px 15px 225px;
+            padding: 10px 20px;
+            /* Espaciado interno */
             color: black;
-        } */
+            /* Color del texto */
+            cursor: pointer;
+            /* Cambia el cursor al pasar sobre el botón */
+            transition: all 0.2s ease;
+            /* Transición suave al pasar el mouse */
+        }
     </style>
 
 </head>
@@ -387,8 +412,8 @@
                                 <div class="tarjeta">
                                     <h3>Pizza carbonara</h3>
                                     <img src="/img/pizza.jpg" alt="pizza carbonara">
-                                    <p>Una pizza con crema de nata</p>
-                                    <a href="#">Ver receta</a>
+                                    <p>"Una pizza con crema de nata"</p>
+                                    <a href="#"><button>Ver receta</button></a>
                                 </div>
                             </li>
 
@@ -396,8 +421,8 @@
                                 <div class="tarjeta">
                                     <h3>Macarrones</h3>
                                     <img src="/img/macarrones.jpg" alt="macarrones">
-                                    <p>Al estilo de toda la vida</p>
-                                    <a href="#">Ver receta</a>
+                                    <p>"Al estilo de toda la vida"</p>
+                                    <a href="#"><button>Ver receta</button></a>
                                 </div>
                             </li>
 
@@ -405,8 +430,8 @@
                                 <div class="tarjeta">
                                     <h3>Empanadas</h3>
                                     <img src="/img/empanadas.webp" alt="empanadas">
-                                    <p>Crujientes por fuera y tiernas por dentro</p>
-                                    <a href="#">Ver receta</a>
+                                    <p>"Crujientes por fuera y tiernas por dentro"</p>
+                                    <a href="#"><button> Ver receta</button></a>
                                 </div>
                             </li>
 
