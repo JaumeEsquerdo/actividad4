@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tortilla de patata</title>
+    <meta name="description" content="Reseñas del plato tortilla de patatas">
+    <meta name="keywords" content="CEI, Diseño Web, HTML, CSS, Cocina, Recetas">
+    <meta name="author" content="Jaume Esquerdo">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+
+        }
+
+        /* aqui van los estilos del header */
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            background-color: #afca61;
+
+        }
+
+        header ul {
+            display: flex;
+            gap: 50px;
+            padding: 10px;
+            align-items: center;
+            list-style: none;
+        }
+
+        header ul a {
+            text-decoration: none;
+            font-size: 20px;
+            margin: 20px;
+            font-weight: bold;
+            color: rgb(64, 63, 63)
+        }
+        .logo {
+            border: 2px solid black;
+            border-radius: 50px 50px 50px 50px;
+            width: 70px;
+            height: 70px;
+            margin: 10px;
+        }
+
+        .logo img {
+            padding: 10px;
+            width: 70px;
+            height: 70px;
+        }
+
+        /* AQUÍ VA EL FOOTER */
+
+        footer {
+    background-color: #afca61;
+    padding: 20px;
+    text-align: center;
+    color: #333;
+}
+
+    
+
+.footer-nav {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-nav li {
+    display: inline;
+}
+
+.footer-nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.footer-social, .footer-contact, .footer-legal, .footer-newsletter, .footer-copyright {
+    margin: 10px 0;
+}
+
+.footer-social a {
+    text-decoration: none;
+    color: #333;
+}
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+        main{
+            height: 100vh;;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+
+    <header>
+        <div class="logo">
+            <a href="./index.html">
+                <img src="../img/logo.png" alt="Logo de pagina" /></a>
+        </div>
+        <ul>
+            <li><a href="./usuarios.html">Usuarios</a></li>
+            <li><a id="resenas-seccion" href="./resenas.html">Reseñas</a></li>
+            <li><a href="./recetas.html">Recetas</a></li>
+            <li><a href="./perfil.html">Perfil</a></li>
+
+            <li><a href="./index.html">Inicio</a></li>
+        </ul>
+    </header>
+    <main>
+        <h2>Hola</h2>
+    </main>
+
+    <footer>
+        
+            <!-- Enlaces de navegación -->
+            <ul class="footer-nav">
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./recetas.html">Recetas</a></li>
+                <li><a href="./intercambios.html">Intercambios</a></li>
+                <li><a href="./desafios.html">Desafíos</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+                <li><a href="./acerca.html">Acerca de nosotros</a></li>
+            </ul>
+
+            <!-- Redes sociales -->
+            <div class="footer-social">
+                <p>Síguenos en:</p>
+                <a href="https://www.facebook.com/ChefConnect" target="_blank">Facebook</a>
+                |
+                <a href="https://www.instagram.com/ChefConnect" target="_blank">Instagram</a>
+                |
+                <a href="https://twitter.com/ChefConnect" target="_blank">Twitter</a>
+            </div>
+
+            <!-- Información de contacto -->
+            <div class="footer-contact">
+                <p>
+                    Contacto:
+                    <a href="mailto:soporte@chefconnect.com">soporte@chefconnect.com</a>
+                </p>
+            </div>
+
+            <!-- Políticas del sitio -->
+            <div class="footer-legal">
+                <a href="./privacidad.html">Política de Privacidad</a> |
+                <a href="./tyc.html">Términos y Condiciones</a>
+            </div>
+
+            <!-- Derechos de autor -->
+            <div class="footer-copyright">
+                <p>&copy; 2024 ChefConnect. Todos los derechos reservados.</p>
+            </div>
+       
+    </footer>
+</div>
+</body>
+
+</html>
